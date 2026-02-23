@@ -20,6 +20,9 @@ enum class ErrorCode(
     CHILD_ACCESS_DENIED(HttpStatus.FORBIDDEN, "CHILD_002", "Access denied to this child profile"),
     CHILD_LIMIT_EXCEEDED(HttpStatus.BAD_REQUEST, "CHILD_003", "Maximum number of children reached"),
 
+    // Recipe
+    RECIPE_NOT_FOUND(HttpStatus.NOT_FOUND, "RECIPE_001", "Recipe not found"),
+
     // Common
     INVALID_INPUT(HttpStatus.BAD_REQUEST, "COMMON_001", "Invalid input"),
     INTERNAL_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "COMMON_999", "Internal server error")
