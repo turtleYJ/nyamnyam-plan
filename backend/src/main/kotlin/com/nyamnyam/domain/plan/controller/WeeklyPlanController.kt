@@ -1,6 +1,7 @@
 package com.nyamnyam.domain.plan.controller
 
 import com.nyamnyam.common.security.CurrentUserId
+import com.nyamnyam.domain.plan.dto.GeneratePlanRequest
 import com.nyamnyam.domain.plan.dto.WeeklyPlanCreateRequest
 import com.nyamnyam.domain.plan.dto.WeeklyPlanResponse
 import com.nyamnyam.domain.plan.dto.WeeklyPlanUpdateRequest
@@ -38,6 +39,14 @@ class WeeklyPlanController(
         @Valid @RequestBody request: WeeklyPlanCreateRequest
     ): ResponseEntity<WeeklyPlanResponse> {
         return ResponseEntity.status(HttpStatus.CREATED).body(weeklyPlanService.createPlan(userId, request))
+    }
+
+    @PostMapping("/generate")
+    fun generateAiPlan(
+        @CurrentUserId userId: Long,
+        @Valid @RequestBody request: GeneratePlanRequest
+    ): ResponseEntity<WeeklyPlanResponse> {
+        return ResponseEntity.status(HttpStatus.CREATED).body(weeklyPlanService.generateAiPlan(userId, request))
     }
 
     @PutMapping("/{id}")

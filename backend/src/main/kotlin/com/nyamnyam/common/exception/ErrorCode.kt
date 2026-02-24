@@ -28,6 +28,10 @@ enum class ErrorCode(
     PLAN_ACCESS_DENIED(HttpStatus.FORBIDDEN, "PLAN_002", "Access denied to this weekly plan"),
     PLAN_ALREADY_EXISTS(HttpStatus.CONFLICT, "PLAN_003", "Weekly plan already exists for this week"),
 
+    // AI
+    AI_SERVICE_ERROR(HttpStatus.SERVICE_UNAVAILABLE, "AI_001", "AI meal plan generation failed"),
+    AI_INSUFFICIENT_RECIPES(HttpStatus.BAD_REQUEST, "AI_002", "Not enough recipes available for this child"),
+
     // Common
     INVALID_INPUT(HttpStatus.BAD_REQUEST, "COMMON_001", "Invalid input"),
     INTERNAL_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "COMMON_999", "Internal server error")

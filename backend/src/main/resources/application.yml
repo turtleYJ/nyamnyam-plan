@@ -26,6 +26,11 @@ jwt:
   access-token-expiry: 1800000
   refresh-token-expiry: 1209600000
 
+ai:
+  service:
+    url: ${AI_SERVICE_URL:http://localhost:8000}
+    timeout: 30000
+
 oauth:
   kakao:
     client-id: ${KAKAO_CLIENT_ID:}
