@@ -23,6 +23,10 @@ enum class ErrorCode(
     // Recipe
     RECIPE_NOT_FOUND(HttpStatus.NOT_FOUND, "RECIPE_001", "Recipe not found"),
 
+    // Plan
+    PLAN_NOT_FOUND(HttpStatus.NOT_FOUND, "PLAN_001", "Weekly plan not found"),
+    PLAN_ACCESS_DENIED(HttpStatus.FORBIDDEN, "PLAN_002", "Access denied to this weekly plan"),
+
     // Common
     INVALID_INPUT(HttpStatus.BAD_REQUEST, "COMMON_001", "Invalid input"),
     INTERNAL_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "COMMON_999", "Internal server error")

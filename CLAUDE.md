@@ -1,8 +1,8 @@
 # nyamnyam-plan 세션 기록
 
-## 현재 상태 (2026-02-23)
-- **완료**: 1~3단계
-- **다음**: 4단계 (주간 식단 API) 또는 프론트엔드 먼저 붙이기
+## 현재 상태 (2026-02-24)
+- **완료**: 1~4단계
+- **다음**: 5단계 (AI 식단 추천) 또는 프론트엔드 먼저 붙이기
 
 ## 완료된 단계
 
@@ -22,8 +22,13 @@
 - DataSeeder: 25개 이유식 레시피 JSON 시드 로더
 - 9개 파일, 724줄 추가
 
+### 4단계: 주간 식단 CRUD API
+- WeeklyPlan/DailyMeal CRUD (생성/목록/상세/수정/삭제)
+- 소유권 검증 (JWT userId → Child → WeeklyPlan)
+- fetch join으로 meals + recipe 함께 로드
+- 6개 파일 신규, 1개 수정 (ErrorCode)
+
 ## 남은 단계
-- **4단계**: 주간 식단 API (WeeklyPlan/DailyMeal CRUD + 레시피 배정)
 - **5단계**: AI 식단 추천 (ai-server 연동)
 - **6단계**: 프론트엔드 모바일 앱
 
@@ -36,7 +41,7 @@ backend/src/main/kotlin/com/nyamnyam/
 ├── domain/
 │   ├── child/     # Child CRUD (controller, service, repository, dto, entity)
 │   ├── recipe/    # Recipe 조회/필터링 (controller, service, repository, dto, entity)
-│   ├── plan/      # WeeklyPlan, DailyMeal (entity only — 아직 미구현)
+│   ├── plan/      # WeeklyPlan/DailyMeal CRUD (controller, service, repository, dto, entity)
 │   └── user/      # User (service, repository, dto, entity)
 └── infrastructure/ # HealthController, DataSeeder
 ```
@@ -52,6 +57,11 @@ backend/src/main/kotlin/com/nyamnyam/
 | GET/POST/PUT/DELETE | /api/children | O | ✅ |
 | GET | /api/recipes | O | ✅ |
 | GET | /api/recipes/{id} | O | ✅ |
+| POST | /api/plans | O | ✅ |
+| GET | /api/plans?childId={id} | O | ✅ |
+| GET | /api/plans/{id} | O | ✅ |
+| PUT | /api/plans/{id} | O | ✅ |
+| DELETE | /api/plans/{id} | O | ✅ |
 | GET | /api/health | X | ✅ |
 
 ## 주요 패턴
