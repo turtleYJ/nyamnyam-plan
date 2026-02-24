@@ -1,8 +1,8 @@
 # nyamnyam-plan 세션 기록
 
 ## 현재 상태 (2026-02-24)
-- **완료**: 1~4단계
-- **다음**: 5단계 (AI 식단 추천) 또는 프론트엔드 먼저 붙이기
+- **완료**: 1~5단계
+- **다음**: 6단계 (프론트엔드 모바일 앱)
 
 ## 완료된 단계
 
@@ -28,8 +28,14 @@
 - fetch join으로 meals + recipe 함께 로드
 - 6개 파일 신규, 1개 수정 (ErrorCode)
 
+### 5단계: AI 식단 추천 (348f117)
+- `POST /api/plans/generate` — Claude API로 7일 식단 자동 생성
+- AI 서버: AsyncAnthropic + Redis 24h 캐싱 + round-robin fallback
+- 백엔드: AiMealPlanClient (WebClient) → AI 서버 호출
+- 월령/알레르기 기반 레시피 필터링 → AI 서버에 전달
+- 14개 파일 변경, 463줄 추가
+
 ## 남은 단계
-- **5단계**: AI 식단 추천 (ai-server 연동)
 - **6단계**: 프론트엔드 모바일 앱
 
 ## 프로젝트 구조 요약
@@ -43,7 +49,7 @@ backend/src/main/kotlin/com/nyamnyam/
 │   ├── recipe/    # Recipe 조회/필터링 (controller, service, repository, dto, entity)
 │   ├── plan/      # WeeklyPlan/DailyMeal CRUD (controller, service, repository, dto, entity)
 │   └── user/      # User (service, repository, dto, entity)
-└── infrastructure/ # HealthController, DataSeeder
+└── infrastructure/ # HealthController, DataSeeder, AiMealPlanClient, AiMealPlanDto
 ```
 
 ## API 엔드포인트
@@ -62,6 +68,7 @@ backend/src/main/kotlin/com/nyamnyam/
 | GET | /api/plans/{id} | O | ✅ |
 | PUT | /api/plans/{id} | O | ✅ |
 | DELETE | /api/plans/{id} | O | ✅ |
+| POST | /api/plans/generate | O | ✅ |
 | GET | /api/health | X | ✅ |
 
 ## 주요 패턴
