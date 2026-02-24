@@ -3,6 +3,7 @@ package com.nyamnyam.domain.plan.controller
 import com.nyamnyam.common.security.CurrentUserId
 import com.nyamnyam.domain.plan.dto.WeeklyPlanCreateRequest
 import com.nyamnyam.domain.plan.dto.WeeklyPlanResponse
+import com.nyamnyam.domain.plan.dto.WeeklyPlanUpdateRequest
 import com.nyamnyam.domain.plan.service.WeeklyPlanService
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
@@ -43,7 +44,7 @@ class WeeklyPlanController(
     fun updatePlan(
         @CurrentUserId userId: Long,
         @PathVariable id: Long,
-        @Valid @RequestBody request: WeeklyPlanCreateRequest
+        @Valid @RequestBody request: WeeklyPlanUpdateRequest
     ): ResponseEntity<WeeklyPlanResponse> {
         return ResponseEntity.ok(weeklyPlanService.updatePlan(userId, id, request))
     }

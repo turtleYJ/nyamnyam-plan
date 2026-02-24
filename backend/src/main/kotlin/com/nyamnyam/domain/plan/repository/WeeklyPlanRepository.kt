@@ -3,8 +3,11 @@ package com.nyamnyam.domain.plan.repository
 import com.nyamnyam.domain.plan.entity.WeeklyPlan
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
+import java.time.LocalDate
 
 interface WeeklyPlanRepository : JpaRepository<WeeklyPlan, Long> {
+
+    fun existsByChildIdAndWeekStartDate(childId: Long, weekStartDate: LocalDate): Boolean
 
     @Query("""
         SELECT DISTINCT p FROM WeeklyPlan p

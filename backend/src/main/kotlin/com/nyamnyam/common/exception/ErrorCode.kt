@@ -26,6 +26,7 @@ enum class ErrorCode(
     // Plan
     PLAN_NOT_FOUND(HttpStatus.NOT_FOUND, "PLAN_001", "Weekly plan not found"),
     PLAN_ACCESS_DENIED(HttpStatus.FORBIDDEN, "PLAN_002", "Access denied to this weekly plan"),
+    PLAN_ALREADY_EXISTS(HttpStatus.CONFLICT, "PLAN_003", "Weekly plan already exists for this week"),
 
     // Common
     INVALID_INPUT(HttpStatus.BAD_REQUEST, "COMMON_001", "Invalid input"),

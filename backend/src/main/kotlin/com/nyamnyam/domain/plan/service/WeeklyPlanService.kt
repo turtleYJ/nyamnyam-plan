@@ -6,6 +6,7 @@ import com.nyamnyam.domain.child.repository.ChildRepository
 import com.nyamnyam.domain.plan.dto.MealRequest
 import com.nyamnyam.domain.plan.dto.WeeklyPlanCreateRequest
 import com.nyamnyam.domain.plan.dto.WeeklyPlanResponse
+import com.nyamnyam.domain.plan.dto.WeeklyPlanUpdateRequest
 import com.nyamnyam.domain.plan.entity.DailyMeal
 import com.nyamnyam.domain.plan.entity.PlanCreator
 import com.nyamnyam.domain.plan.entity.WeeklyPlan
@@ -39,6 +40,10 @@ class WeeklyPlanService(
         val child = childRepository.findByIdAndUserId(request.childId, userId)
             ?: throw BusinessException(ErrorCode.CHILD_NOT_FOUND)
 
+        if (weeklyPlanRepository.existsByChildIdAndWeekStartDate(request.childId, request.weekStartDate)) {
+            throw BusinessException(ErrorCode.PLAN_ALREADY_EXISTS)
+        }
+
         val plan = WeeklyPlan(
             child = child,
             weekStartDate = request.weekStartDate,
@@ -52,7 +57,7 @@ class WeeklyPlanService(
     }
 
     @Transactional
-    fun updatePlan(userId: Long, planId: Long, request: WeeklyPlanCreateRequest): WeeklyPlanResponse {
+    fun updatePlan(userId: Long, planId: Long, request: WeeklyPlanUpdateRequest): WeeklyPlanResponse {
         val plan = findPlanOrThrow(planId)
         verifyPlanOwnership(userId, plan)
 
