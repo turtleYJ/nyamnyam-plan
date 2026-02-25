@@ -28,5 +28,5 @@ class User(
 )
 
 enum class AuthProvider {
-    KAKAO, NAVER
+    KAKAO, NAVER, DEV
 }

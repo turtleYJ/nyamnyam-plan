@@ -60,6 +60,19 @@ class AuthService(
         return generateTokens(user)
     }
 
+    fun devLogin(email: String): TokenResponse {
+        val user = userRepository.findByEmail(email)
+            ?: userRepository.save(
+                User(
+                    email = email,
+                    nickname = email.substringBefore("@"),
+                    provider = AuthProvider.DEV,
+                    providerId = "dev-$email"
+                )
+            )
+        return generateTokens(user)
+    }
+
     fun logout(userId: Long) {
         jwtTokenProvider.deleteRefreshToken(userId)
     }

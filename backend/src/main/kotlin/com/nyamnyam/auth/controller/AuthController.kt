@@ -1,5 +1,6 @@
 package com.nyamnyam.auth.controller
 
+import com.nyamnyam.auth.dto.DevLoginRequest
 import com.nyamnyam.auth.dto.LoginRequest
 import com.nyamnyam.auth.dto.RefreshRequest
 import com.nyamnyam.auth.dto.TokenResponse
@@ -7,6 +8,7 @@ import com.nyamnyam.auth.service.AuthService
 import com.nyamnyam.common.security.CurrentUserId
 import com.nyamnyam.domain.user.entity.AuthProvider
 import jakarta.validation.Valid
+import org.springframework.context.annotation.Profile
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -18,6 +20,12 @@ import org.springframework.web.bind.annotation.RestController
 class AuthController(
     private val authService: AuthService
 ) {
+
+    @Profile("local")
+    @PostMapping("/dev-login")
+    fun devLogin(@Valid @RequestBody request: DevLoginRequest): ResponseEntity<TokenResponse> {
+        return ResponseEntity.ok(authService.devLogin(request.email))
+    }
 
     @PostMapping("/login/kakao")
     fun loginWithKakao(@Valid @RequestBody request: LoginRequest): ResponseEntity<TokenResponse> {
