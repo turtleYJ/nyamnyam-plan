@@ -96,6 +96,34 @@ frontend/src/
 | POST | /api/plans/generate | O | ✅ |
 | GET | /api/health | X | ✅ |
 
+## E2E 테스트 기록 (2026-02-25)
+
+### 테스트 환경
+- 백엔드: Spring Boot (localhost:8080, local 프로필)
+- AI 서버: FastAPI + uvicorn (localhost:8000)
+- 프론트엔드: Next.js dev (localhost:3000)
+- DB: 로컬 MariaDB 11.0.2 (Docker 대신 사용)
+- Redis: Docker (localhost:6379)
+- 테스트 도구: Playwright MCP
+
+### 테스트 시나리오 (전체 통과)
+| # | 화면 | 테스트 내용 | 결과 |
+|---|------|------------|------|
+| 1 | 랜딩 `/` | dev-login (test@nyamnyam.com) → /children 리다이렉트 | ✅ |
+| 2 | 아이 관리 `/children` | 하은(8개월, 여아, 계란/우유 알레르기) 등록 | ✅ |
+| 3 | 식단 관리 `/plans` | 아이 선택 + "AI 식단 생성" 클릭 | ✅ |
+| 4 | 식단 상세 `/plans/1` | 7일×4끼니 WeeklyGrid 표시, 레시피 링크 동작 | ✅ |
+| 5 | 레시피 상세 `/recipes/7` | 소고기죽 — 재료/조리법/영양소 표시 | ✅ |
+| 6 | 레시피 목록 `/recipes` | 25개 레시피 목록 + 단계/카테고리 필터 | ✅ |
+
+### 발견 및 수정한 버그 (74103de)
+| 버그 | 원인 | 수정 |
+|------|------|------|
+| 시드 데이터 min_month=0 | Jackson SNAKE_CASE가 camelCase JSON 필드 무시 | DataSeeder에 `@JsonProperty` 추가 |
+| AI 서버 503 | 백엔드 WebClient가 camelCase로 전송 | WebClientConfig에 ObjectMapper 주입 |
+| MariaDB 연결 실패 | MySQL 드라이버가 `transaction_isolation` 전송 | MariaDB JDBC 드라이버로 변경 |
+| Python 3.9 타입 에러 | `dict \| None` 문법 3.10+ 전용 | `from __future__ import annotations` 추가 |
+
 ## 주요 패턴
 - **DTO**: companion `from()` 팩토리
 - **Service**: `@Transactional(readOnly = true)` 클래스 레벨, 쓰기 메서드만 `@Transactional`
