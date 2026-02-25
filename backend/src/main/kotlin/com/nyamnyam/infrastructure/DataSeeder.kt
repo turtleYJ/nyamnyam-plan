@@ -1,5 +1,6 @@
 package com.nyamnyam.infrastructure
 
+import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.nyamnyam.domain.recipe.entity.*
@@ -81,9 +82,9 @@ class DataSeeder(
 
     data class SeedRecipe(
         val name: String,
-        val minMonth: Int,
-        val maxMonth: Int,
-        val cookTime: Int,
+        @JsonProperty("minMonth") val minMonth: Int,
+        @JsonProperty("maxMonth") val maxMonth: Int,
+        @JsonProperty("cookTime") val cookTime: Int,
         val instructions: String,
         val category: String,
         val stage: String,
@@ -102,8 +103,8 @@ class DataSeeder(
         val protein: Double,
         val iron: Double,
         val calcium: Double,
-        val vitaminA: Double,
-        val vitaminC: Double,
+        @JsonProperty("vitaminA") val vitaminA: Double,
+        @JsonProperty("vitaminC") val vitaminC: Double,
         val zinc: Double
     )
 }

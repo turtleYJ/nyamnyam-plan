@@ -39,6 +39,7 @@ dependencies {
 
     // Database
     runtimeOnly("com.mysql:mysql-connector-j")
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
 
     // Test
     testImplementation("org.springframework.boot:spring-boot-starter-test")

@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/nyamnyam}
+    url: ${SPRING_DATASOURCE_URL:jdbc:mariadb://localhost:3306/nyamnyam}
     username: ${SPRING_DATASOURCE_USERNAME:nyamnyam}
     password: ${SPRING_DATASOURCE_PASSWORD:nyamnyam_pass}
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.mariadb.jdbc.Driver
 
   data:
     redis:
