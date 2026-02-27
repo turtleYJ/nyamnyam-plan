@@ -13,6 +13,7 @@ import org.springframework.core.io.ClassPathResource
 import org.springframework.stereotype.Component
 import org.springframework.transaction.annotation.Transactional
 import java.math.BigDecimal
+import java.math.RoundingMode
 
 @Component
 class DataSeeder(
@@ -30,11 +31,14 @@ class DataSeeder(
             return
         }
 
+        val nutritionMap = loadIngredientNutrition()
+        log.info("Loaded {} ingredient nutrition entries", nutritionMap.size)
+
+        val ingredientCache = mutableMapOf<String, Ingredient>()
+
         log.info("Loading recipe seed data...")
         val json = ClassPathResource("data/recipes.json").inputStream.bufferedReader().readText()
         val seedRecipes: List<SeedRecipe> = objectMapper.readValue(json, object : TypeReference<List<SeedRecipe>>() {})
-
-        val ingredientCache = mutableMapOf<String, Ingredient>()
 
         for (seed in seedRecipes) {
             val recipe = Recipe(
@@ -49,8 +53,33 @@ class DataSeeder(
 
             for (si in seed.ingredients) {
                 val ingredient = ingredientCache.getOrPut(si.name) {
-                    ingredientRepository.findByName(si.name)
-                        ?: ingredientRepository.save(Ingredient(name = si.name, unit = si.unit))
+                    val nutData = nutritionMap[si.name]
+                    val gramsPerUnit = nutData?.gramsPerUnit?.let { BigDecimal(it.toString()) }
+
+                    val saved = ingredientRepository.findByName(si.name)
+                        ?: ingredientRepository.save(
+                            Ingredient(name = si.name, unit = si.unit, gramsPerUnit = gramsPerUnit)
+                        )
+
+                    if (nutData != null && saved.nutrition == null) {
+                        val p = nutData.per100g
+                        saved.nutrition = IngredientNutrition(
+                            ingredient = saved,
+                            foodCode = nutData.foodCode,
+                            foodNameOfficial = nutData.foodNameOfficial,
+                            calories = bd(p.calories),
+                            protein = bd(p.protein),
+                            iron = bd(p.iron),
+                            calcium = bd(p.calcium),
+                            vitaminA = bd(p.vitaminA),
+                            vitaminC = bd(p.vitaminC),
+                            zinc = bd(p.zinc),
+                            source = nutData.source
+                        )
+                        ingredientRepository.save(saved)
+                    }
+
+                    saved
                 }
                 recipe.ingredients.add(
                     RecipeIngredient(
@@ -61,24 +90,66 @@ class DataSeeder(
                 )
             }
 
-            seed.nutrition?.let { n ->
-                recipe.nutrition = RecipeNutrition(
-                    recipe = recipe,
-                    calories = BigDecimal(n.calories.toString()),
-                    protein = BigDecimal(n.protein.toString()),
-                    iron = BigDecimal(n.iron.toString()),
-                    calcium = BigDecimal(n.calcium.toString()),
-                    vitaminA = BigDecimal(n.vitaminA.toString()),
-                    vitaminC = BigDecimal(n.vitaminC.toString()),
-                    zinc = BigDecimal(n.zinc.toString())
-                )
-            }
-
+            recipe.nutrition = calculateNutrition(recipe, nutritionMap)
             recipeRepository.save(recipe)
         }
 
         log.info("Loaded {} recipes with seed data", seedRecipes.size)
     }
+
+    private fun loadIngredientNutrition(): Map<String, SeedIngredientNutrition> {
+        val json = ClassPathResource("data/ingredient-nutrition.json").inputStream.bufferedReader().readText()
+        val list: List<SeedIngredientNutrition> = objectMapper.readValue(
+            json, object : TypeReference<List<SeedIngredientNutrition>>() {}
+        )
+        return list.associateBy { it.name }
+    }
+
+    private fun calculateNutrition(recipe: Recipe, nutritionMap: Map<String, SeedIngredientNutrition>): RecipeNutrition {
+        var totalCalories = BigDecimal.ZERO
+        var totalProtein = BigDecimal.ZERO
+        var totalIron = BigDecimal.ZERO
+        var totalCalcium = BigDecimal.ZERO
+        var totalVitaminA = BigDecimal.ZERO
+        var totalVitaminC = BigDecimal.ZERO
+        var totalZinc = BigDecimal.ZERO
+
+        for (ri in recipe.ingredients) {
+            val nutData = nutritionMap[ri.ingredient.name] ?: continue
+            val p = nutData.per100g
+
+            // amount를 g으로 환산
+            val gpu = nutData.gramsPerUnit
+            val amountInGrams = when {
+                ri.ingredient.unit == "개" && gpu != null -> ri.amount * bd(gpu)
+                ri.ingredient.unit == "ml" && gpu != null -> ri.amount * bd(gpu)
+                else -> ri.amount
+            }
+
+            val ratio = amountInGrams.divide(BigDecimal(100), 10, RoundingMode.HALF_UP)
+
+            totalCalories = totalCalories.add(ratio.multiply(bd(p.calories)))
+            totalProtein = totalProtein.add(ratio.multiply(bd(p.protein)))
+            totalIron = totalIron.add(ratio.multiply(bd(p.iron)))
+            totalCalcium = totalCalcium.add(ratio.multiply(bd(p.calcium)))
+            totalVitaminA = totalVitaminA.add(ratio.multiply(bd(p.vitaminA)))
+            totalVitaminC = totalVitaminC.add(ratio.multiply(bd(p.vitaminC)))
+            totalZinc = totalZinc.add(ratio.multiply(bd(p.zinc)))
+        }
+
+        return RecipeNutrition(
+            recipe = recipe,
+            calories = totalCalories.setScale(2, RoundingMode.HALF_UP),
+            protein = totalProtein.setScale(2, RoundingMode.HALF_UP),
+            iron = totalIron.setScale(2, RoundingMode.HALF_UP),
+            calcium = totalCalcium.setScale(2, RoundingMode.HALF_UP),
+            vitaminA = totalVitaminA.setScale(2, RoundingMode.HALF_UP),
+            vitaminC = totalVitaminC.setScale(2, RoundingMode.HALF_UP),
+            zinc = totalZinc.setScale(2, RoundingMode.HALF_UP)
+        )
+    }
+
+    private fun bd(value: Double): BigDecimal = BigDecimal(value.toString())
 
     data class SeedRecipe(
         val name: String,
@@ -88,8 +159,7 @@ class DataSeeder(
         val instructions: String,
         val category: String,
         val stage: String,
-        val ingredients: List<SeedIngredient>,
-        val nutrition: SeedNutrition?
+        val ingredients: List<SeedIngredient>
     )
 
     data class SeedIngredient(
@@ -98,7 +168,17 @@ class DataSeeder(
         val amount: Double
     )
 
-    data class SeedNutrition(
+    data class SeedIngredientNutrition(
+        val name: String,
+        val unit: String,
+        val gramsPerUnit: Double?,
+        val foodCode: String?,
+        val foodNameOfficial: String?,
+        val per100g: NutritionValues,
+        val source: String?
+    )
+
+    data class NutritionValues(
         val calories: Double,
         val protein: Double,
         val iron: Double,

@@ -147,6 +147,11 @@ export default function RecipeDetailPage() {
                     </div>
                   ))}
                 </div>
+                {recipe.nutrition.source && (
+                  <p className="text-xs text-gray-400 mt-3">
+                    * 조리 전 생재료 기준 | 출처: {recipe.nutrition.source}
+                  </p>
+                )}
               </section>
             )}
           </>

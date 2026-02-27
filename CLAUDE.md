@@ -1,14 +1,14 @@
 # nyamnyam-plan 세션 기록
 
 ## 현재 상태 (2026-02-27)
-- **완료**: 1~6단계 (MVP 전체) + 장보기 목록 기능
+- **완료**: 1~6단계 (MVP 전체) + 장보기 목록 + 시드 데이터 고도화
 
 ## 완료된 단계
 
 ### 1단계: 프로젝트 기반 세팅 (51ea707)
 - Spring Boot 3.2 + Kotlin 1.9 프로젝트 구조
 - Docker Compose (MySQL, Redis)
-- Entity: User, Child, Recipe, Ingredient, RecipeIngredient, RecipeNutrition, WeeklyPlan, DailyMeal
+- Entity: User, Child, Recipe, Ingredient, RecipeIngredient, RecipeNutrition, IngredientNutrition, WeeklyPlan, DailyMeal
 
 ### 2단계: 인증 + 아이 프로필 CRUD (175ce0f)
 - JWT 인증 + OAuth 2.0 (Kakao, Naver)
@@ -18,7 +18,7 @@
 ### 3단계: 레시피 DB + 룰 기반 필터링 (5e6d185)
 - `GET /api/recipes` — 월령/카테고리/스테이지/알레르기 필터링
 - `GET /api/recipes/{id}` — 상세 (재료 + 영양소)
-- DataSeeder: 25개 이유식 레시피 JSON 시드 로더
+- DataSeeder: 이유식 레시피 JSON 시드 로더 (→ 7단계에서 105개로 확대)
 - 9개 파일, 724줄 추가
 
 ### 4단계: 주간 식단 CRUD API
@@ -52,6 +52,18 @@
 - 쿠팡 검색 링크 (개별 재료 + 전체 한번에 검색)
 - 9개 파일 변경, 455줄 추가
 - Hibernate MultipleBagFetchException → lazy loading으로 해결
+
+### 시드 데이터 고도화: 식약처 영양성분DB 기반 + 레시피 105개 확대
+- **IngredientNutrition 엔티티** (신규): Ingredient 1:1, 100g 기준 영양소 + 식약처 식품코드/출처
+- **Ingredient 확장**: `gramsPerUnit` 필드 (단위 환산: 달걀 1개=50g, 우유 1ml≈1.03g)
+- **RecipeNutrition에 source 추가**: `"재료 기반 자동 계산 (식약처 식품영양성분DB)"`
+- **DataSeeder 리팩토링**: ingredient-nutrition.json 로드 → 재료 영양소 자동 생성 → 레시피 영양소 재료 기반 계산
+- **영양소 계산 공식**: `레시피 영양소 = Σ (재료 투입량(g) / 100) × 재료의 100g당 영양소`
+- **레시피 25 → 105개** (EARLY 20, MIDDLE 25, LATE 30, COMPLETE 30)
+- **재료 영양소 60종** (식약처 식품영양성분DB 기반, ingredient-nutrition.json)
+- **프론트엔드**: 레시피 상세 영양소 하단에 출처 텍스트 표시
+- 데이터 파일: `ingredient-nutrition.json` (신규), `recipes.json` (수정, nutrition 필드 제거)
+- 백엔드 신규 2, 수정 4, 데이터 2 / 프론트 수정 2 = 총 10개 파일 변경
 
 ## 프로젝트 구조 요약
 ```
@@ -152,6 +164,18 @@ frontend/src/
 |------|------|------|
 | API 500 | Hibernate MultipleBagFetchException (2 컬렉션 동시 fetch join) | findByIdWithDetails + 트랜잭션 내 lazy loading |
 | Set 스프레드 타입 에러 | TypeScript downlevelIteration 미설정 | `Array.from(checked)` 사용 |
+
+## E2E 테스트 기록 — 시드 데이터 고도화 (2026-02-27)
+
+| # | 테스트 | 결과 |
+|---|--------|------|
+| 1 | DB 시드: 105개 레시피 로드 확인 (EARLY 20, MIDDLE 25, LATE 30, COMPLETE 30) | ✅ |
+| 2 | DB 시드: 55종 재료 + 55개 IngredientNutrition 생성 | ✅ |
+| 3 | DB 시드: 105개 RecipeNutrition 자동 계산 생성 | ✅ |
+| 4 | API: `GET /api/recipes` → 105개 반환 | ✅ |
+| 5 | API: `GET /api/recipes/46` (소고기죽) → 영양소 + source 필드 포함 | ✅ |
+| 6 | 영양소 검산: 소고기죽 132.6kcal (소고기 20g×129/100 + 쌀 30g×356/100) | ✅ |
+| 7 | 프론트: 레시피 상세 영양소 하단 출처 텍스트 표시 확인 | ✅ |
 
 ## 주요 패턴
 - **DTO**: companion `from()` 팩토리

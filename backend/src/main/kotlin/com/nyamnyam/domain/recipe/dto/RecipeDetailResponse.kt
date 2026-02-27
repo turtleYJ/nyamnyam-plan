@@ -30,7 +30,8 @@ data class RecipeDetailResponse(
         val calcium: BigDecimal,
         val vitaminA: BigDecimal,
         val vitaminC: BigDecimal,
-        val zinc: BigDecimal
+        val zinc: BigDecimal,
+        val source: String?
     )
 
     companion object {
@@ -58,7 +59,8 @@ data class RecipeDetailResponse(
                     calcium = n.calcium,
                     vitaminA = n.vitaminA,
                     vitaminC = n.vitaminC,
-                    zinc = n.zinc
+                    zinc = n.zinc,
+                    source = n.source
                 )
             }
         )

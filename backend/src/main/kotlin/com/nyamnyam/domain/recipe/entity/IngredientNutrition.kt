@@ -4,15 +4,21 @@ import jakarta.persistence.*
 import java.math.BigDecimal
 
 @Entity
-@Table(name = "recipe_nutritions")
-class RecipeNutrition(
+@Table(name = "ingredient_nutritions")
+class IngredientNutrition(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "recipe_id", nullable = false, unique = true)
-    val recipe: Recipe,
+    @JoinColumn(name = "ingredient_id", nullable = false, unique = true)
+    val ingredient: Ingredient,
+
+    @Column(length = 20)
+    val foodCode: String? = null,
+
+    @Column(length = 100)
+    val foodNameOfficial: String? = null,
 
     @Column(precision = 8, scale = 2)
     val calories: BigDecimal = BigDecimal.ZERO,
@@ -35,6 +41,6 @@ class RecipeNutrition(
     @Column(precision = 8, scale = 2)
     val zinc: BigDecimal = BigDecimal.ZERO,
 
-    @Column(length = 100)
-    val source: String = "재료 기반 자동 계산 (식약처 식품영양성분DB)"
+    @Column(length = 50)
+    val source: String? = null
 )

@@ -8,10 +8,17 @@
     "category": "BABY_FOOD",
     "stage": "EARLY",
     "ingredients": [
-      {"name": "쌀", "unit": "g", "amount": 30},
-      {"name": "물", "unit": "ml", "amount": 200}
-    ],
-    "nutrition": {"calories": 45, "protein": 0.8, "iron": 0.2, "calcium": 3, "vitaminA": 0, "vitaminC": 0, "zinc": 0.3}
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
   },
   {
     "name": "감자미음",
@@ -22,10 +29,17 @@
     "category": "BABY_FOOD",
     "stage": "EARLY",
     "ingredients": [
-      {"name": "감자", "unit": "g", "amount": 50},
-      {"name": "물", "unit": "ml", "amount": 200}
-    ],
-    "nutrition": {"calories": 40, "protein": 1.0, "iron": 0.3, "calcium": 5, "vitaminA": 0, "vitaminC": 8, "zinc": 0.2}
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 50
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
   },
   {
     "name": "고구마미음",
@@ -36,10 +50,17 @@
     "category": "BABY_FOOD",
     "stage": "EARLY",
     "ingredients": [
-      {"name": "고구마", "unit": "g", "amount": 50},
-      {"name": "물", "unit": "ml", "amount": 200}
-    ],
-    "nutrition": {"calories": 52, "protein": 0.7, "iron": 0.3, "calcium": 15, "vitaminA": 120, "vitaminC": 10, "zinc": 0.2}
+      {
+        "name": "고구마",
+        "unit": "g",
+        "amount": 50
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
   },
   {
     "name": "애호박미음",
@@ -50,11 +71,22 @@
     "category": "BABY_FOOD",
     "stage": "EARLY",
     "ingredients": [
-      {"name": "애호박", "unit": "g", "amount": 40},
-      {"name": "쌀", "unit": "g", "amount": 15},
-      {"name": "물", "unit": "ml", "amount": 200}
-    ],
-    "nutrition": {"calories": 35, "protein": 0.9, "iron": 0.3, "calcium": 8, "vitaminA": 18, "vitaminC": 5, "zinc": 0.2}
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
   },
   {
     "name": "브로콜리미음",
@@ -65,11 +97,22 @@
     "category": "BABY_FOOD",
     "stage": "EARLY",
     "ingredients": [
-      {"name": "브로콜리", "unit": "g", "amount": 30},
-      {"name": "쌀", "unit": "g", "amount": 15},
-      {"name": "물", "unit": "ml", "amount": 200}
-    ],
-    "nutrition": {"calories": 30, "protein": 1.5, "iron": 0.4, "calcium": 20, "vitaminA": 25, "vitaminC": 30, "zinc": 0.2}
+      {
+        "name": "브로콜리",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
   },
   {
     "name": "당근미음",
@@ -80,309 +123,22 @@
     "category": "BABY_FOOD",
     "stage": "EARLY",
     "ingredients": [
-      {"name": "당근", "unit": "g", "amount": 30},
-      {"name": "쌀", "unit": "g", "amount": 15},
-      {"name": "물", "unit": "ml", "amount": 200}
-    ],
-    "nutrition": {"calories": 35, "protein": 0.6, "iron": 0.2, "calcium": 12, "vitaminA": 280, "vitaminC": 3, "zinc": 0.1}
-  },
-  {
-    "name": "소고기죽",
-    "minMonth": 6,
-    "maxMonth": 9,
-    "cookTime": 30,
-    "instructions": "1. 소고기(안심) 20g을 핏물 빼고 잘게 다진다\n2. 불린 쌀 30g과 물 250ml을 끓인다\n3. 소고기를 넣고 약불에서 20분간 저어가며 끓인다\n4. 입자감이 느껴지게 살짝 으깬다",
-    "category": "BABY_FOOD",
-    "stage": "MIDDLE",
-    "ingredients": [
-      {"name": "소고기", "unit": "g", "amount": 20},
-      {"name": "쌀", "unit": "g", "amount": 30},
-      {"name": "물", "unit": "ml", "amount": 250}
-    ],
-    "nutrition": {"calories": 85, "protein": 5.5, "iron": 1.2, "calcium": 8, "vitaminA": 2, "vitaminC": 0, "zinc": 1.5}
-  },
-  {
-    "name": "닭고기채소죽",
-    "minMonth": 6,
-    "maxMonth": 9,
-    "cookTime": 35,
-    "instructions": "1. 닭가슴살 20g을 삶아서 잘게 찢는다\n2. 당근 10g, 양파 10g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 채소와 닭고기를 넣고 약불에서 20분간 끓인다",
-    "category": "BABY_FOOD",
-    "stage": "MIDDLE",
-    "ingredients": [
-      {"name": "닭가슴살", "unit": "g", "amount": 20},
-      {"name": "당근", "unit": "g", "amount": 10},
-      {"name": "양파", "unit": "g", "amount": 10},
-      {"name": "쌀", "unit": "g", "amount": 30},
-      {"name": "물", "unit": "ml", "amount": 250}
-    ],
-    "nutrition": {"calories": 80, "protein": 6.0, "iron": 0.5, "calcium": 12, "vitaminA": 85, "vitaminC": 3, "zinc": 0.8}
-  },
-  {
-    "name": "시금치소고기죽",
-    "minMonth": 6,
-    "maxMonth": 9,
-    "cookTime": 30,
-    "instructions": "1. 시금치 20g을 데쳐서 잘게 다진다\n2. 소고기 15g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기를 넣고 10분 후 시금치를 넣어 함께 끓인다",
-    "category": "BABY_FOOD",
-    "stage": "MIDDLE",
-    "ingredients": [
-      {"name": "시금치", "unit": "g", "amount": 20},
-      {"name": "소고기", "unit": "g", "amount": 15},
-      {"name": "쌀", "unit": "g", "amount": 30},
-      {"name": "물", "unit": "ml", "amount": 250}
-    ],
-    "nutrition": {"calories": 75, "protein": 5.0, "iron": 1.8, "calcium": 30, "vitaminA": 180, "vitaminC": 8, "zinc": 1.2}
-  },
-  {
-    "name": "단호박소고기죽",
-    "minMonth": 6,
-    "maxMonth": 9,
-    "cookTime": 30,
-    "instructions": "1. 단호박 30g을 껍질 제거하고 찐다\n2. 소고기 15g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기와 으깬 단호박을 넣고 약불에서 15분 끓인다",
-    "category": "BABY_FOOD",
-    "stage": "MIDDLE",
-    "ingredients": [
-      {"name": "단호박", "unit": "g", "amount": 30},
-      {"name": "소고기", "unit": "g", "amount": 15},
-      {"name": "쌀", "unit": "g", "amount": 30},
-      {"name": "물", "unit": "ml", "amount": 250}
-    ],
-    "nutrition": {"calories": 90, "protein": 4.5, "iron": 1.0, "calcium": 15, "vitaminA": 200, "vitaminC": 6, "zinc": 1.0}
-  },
-  {
-    "name": "배추소고기죽",
-    "minMonth": 7,
-    "maxMonth": 9,
-    "cookTime": 30,
-    "instructions": "1. 배추 잎 20g을 부드러운 부분만 잘게 다진다\n2. 소고기 15g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기, 배추를 넣고 약불에서 20분 끓인다",
-    "category": "BABY_FOOD",
-    "stage": "MIDDLE",
-    "ingredients": [
-      {"name": "배추", "unit": "g", "amount": 20},
-      {"name": "소고기", "unit": "g", "amount": 15},
-      {"name": "쌀", "unit": "g", "amount": 30},
-      {"name": "물", "unit": "ml", "amount": 250}
-    ],
-    "nutrition": {"calories": 72, "protein": 4.8, "iron": 1.0, "calcium": 25, "vitaminA": 30, "vitaminC": 10, "zinc": 1.1}
-  },
-  {
-    "name": "두부채소죽",
-    "minMonth": 7,
-    "maxMonth": 9,
-    "cookTime": 25,
-    "instructions": "1. 두부 30g을 으깬다\n2. 애호박 15g, 당근 10g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 채소와 두부를 넣고 약불에서 15분 끓인다",
-    "category": "BABY_FOOD",
-    "stage": "MIDDLE",
-    "ingredients": [
-      {"name": "두부", "unit": "g", "amount": 30},
-      {"name": "애호박", "unit": "g", "amount": 15},
-      {"name": "당근", "unit": "g", "amount": 10},
-      {"name": "쌀", "unit": "g", "amount": 30},
-      {"name": "물", "unit": "ml", "amount": 250}
-    ],
-    "nutrition": {"calories": 78, "protein": 4.2, "iron": 0.8, "calcium": 40, "vitaminA": 90, "vitaminC": 4, "zinc": 0.5}
-  },
-  {
-    "name": "소고기무죽",
-    "minMonth": 9,
-    "maxMonth": 12,
-    "cookTime": 35,
-    "instructions": "1. 소고기 25g을 잘게 다진다\n2. 무 20g을 작은 큐브로 자른다\n3. 참기름에 소고기를 볶다가 무를 넣고 함께 볶는다\n4. 불린 쌀 40g과 물 300ml을 넣고 약불에서 끓인다",
-    "category": "BABY_FOOD",
-    "stage": "LATE",
-    "ingredients": [
-      {"name": "소고기", "unit": "g", "amount": 25},
-      {"name": "무", "unit": "g", "amount": 20},
-      {"name": "쌀", "unit": "g", "amount": 40},
-      {"name": "참기름", "unit": "ml", "amount": 2},
-      {"name": "물", "unit": "ml", "amount": 300}
-    ],
-    "nutrition": {"calories": 120, "protein": 7.0, "iron": 1.5, "calcium": 15, "vitaminA": 5, "vitaminC": 6, "zinc": 1.8}
-  },
-  {
-    "name": "달걀야채죽",
-    "minMonth": 9,
-    "maxMonth": 12,
-    "cookTime": 25,
-    "instructions": "1. 달걀 노른자 1개를 풀어준다\n2. 애호박 15g, 당근 10g을 잘게 다진다\n3. 불린 쌀 40g과 물 300ml로 죽을 끓인다\n4. 채소를 넣고 마지막에 달걀을 풀어 넣는다",
-    "category": "BABY_FOOD",
-    "stage": "LATE",
-    "ingredients": [
-      {"name": "달걀", "unit": "개", "amount": 1},
-      {"name": "애호박", "unit": "g", "amount": 15},
-      {"name": "당근", "unit": "g", "amount": 10},
-      {"name": "쌀", "unit": "g", "amount": 40},
-      {"name": "물", "unit": "ml", "amount": 300}
-    ],
-    "nutrition": {"calories": 110, "protein": 5.5, "iron": 0.9, "calcium": 25, "vitaminA": 150, "vitaminC": 5, "zinc": 0.7}
-  },
-  {
-    "name": "연어감자죽",
-    "minMonth": 9,
-    "maxMonth": 12,
-    "cookTime": 30,
-    "instructions": "1. 연어 20g을 삶아서 잘게 부순다\n2. 감자 30g을 삶아서 으깬다\n3. 불린 쌀 35g과 물 280ml로 죽을 끓인다\n4. 감자와 연어를 넣고 약불에서 10분 더 끓인다",
-    "category": "BABY_FOOD",
-    "stage": "LATE",
-    "ingredients": [
-      {"name": "연어", "unit": "g", "amount": 20},
-      {"name": "감자", "unit": "g", "amount": 30},
-      {"name": "쌀", "unit": "g", "amount": 35},
-      {"name": "물", "unit": "ml", "amount": 280}
-    ],
-    "nutrition": {"calories": 115, "protein": 7.2, "iron": 0.5, "calcium": 12, "vitaminA": 15, "vitaminC": 8, "zinc": 0.6}
-  },
-  {
-    "name": "소고기버섯죽",
-    "minMonth": 9,
-    "maxMonth": 12,
-    "cookTime": 30,
-    "instructions": "1. 소고기 25g을 잘게 다진다\n2. 표고버섯 15g을 잘게 다진다\n3. 참기름에 소고기를 볶다가 버섯을 넣고 볶는다\n4. 불린 쌀 40g과 물 300ml을 넣고 약불에서 끓인다",
-    "category": "BABY_FOOD",
-    "stage": "LATE",
-    "ingredients": [
-      {"name": "소고기", "unit": "g", "amount": 25},
-      {"name": "표고버섯", "unit": "g", "amount": 15},
-      {"name": "쌀", "unit": "g", "amount": 40},
-      {"name": "참기름", "unit": "ml", "amount": 2},
-      {"name": "물", "unit": "ml", "amount": 300}
-    ],
-    "nutrition": {"calories": 118, "protein": 7.5, "iron": 1.6, "calcium": 10, "vitaminA": 3, "vitaminC": 1, "zinc": 1.9}
-  },
-  {
-    "name": "닭고기채소무른밥",
-    "minMonth": 9,
-    "maxMonth": 12,
-    "cookTime": 35,
-    "instructions": "1. 닭가슴살 25g을 삶아서 잘게 찢는다\n2. 당근 10g, 브로콜리 15g을 잘게 다진다\n3. 밥 80g에 물 100ml을 넣고 무르게 끓인다\n4. 닭고기와 채소를 넣고 잘 섞는다",
-    "category": "BABY_FOOD",
-    "stage": "LATE",
-    "ingredients": [
-      {"name": "닭가슴살", "unit": "g", "amount": 25},
-      {"name": "당근", "unit": "g", "amount": 10},
-      {"name": "브로콜리", "unit": "g", "amount": 15},
-      {"name": "쌀", "unit": "g", "amount": 80},
-      {"name": "물", "unit": "ml", "amount": 100}
-    ],
-    "nutrition": {"calories": 135, "protein": 8.0, "iron": 0.7, "calcium": 22, "vitaminA": 100, "vitaminC": 18, "zinc": 0.9}
-  },
-  {
-    "name": "우유감자수프",
-    "minMonth": 10,
-    "maxMonth": 12,
-    "cookTime": 25,
-    "instructions": "1. 감자 50g을 껍질 벗기고 작게 자른다\n2. 양파 10g을 잘게 다진다\n3. 물 100ml에 감자와 양파를 넣고 삶는다\n4. 으깬 후 우유 80ml을 넣고 약불에서 데운다",
-    "category": "BABY_FOOD",
-    "stage": "LATE",
-    "ingredients": [
-      {"name": "감자", "unit": "g", "amount": 50},
-      {"name": "양파", "unit": "g", "amount": 10},
-      {"name": "우유", "unit": "ml", "amount": 80},
-      {"name": "물", "unit": "ml", "amount": 100}
-    ],
-    "nutrition": {"calories": 95, "protein": 3.5, "iron": 0.3, "calcium": 80, "vitaminA": 30, "vitaminC": 9, "zinc": 0.4}
-  },
-  {
-    "name": "소고기야채밥",
-    "minMonth": 12,
-    "maxMonth": 24,
-    "cookTime": 30,
-    "instructions": "1. 소고기 30g을 잘게 다져 볶는다\n2. 당근 15g, 애호박 15g, 양파 10g을 잘게 다져 볶는다\n3. 밥 100g을 넣고 함께 볶는다\n4. 참기름을 약간 넣고 잘 섞는다",
-    "category": "TODDLER_FOOD",
-    "stage": "COMPLETE",
-    "ingredients": [
-      {"name": "소고기", "unit": "g", "amount": 30},
-      {"name": "당근", "unit": "g", "amount": 15},
-      {"name": "애호박", "unit": "g", "amount": 15},
-      {"name": "양파", "unit": "g", "amount": 10},
-      {"name": "쌀", "unit": "g", "amount": 100},
-      {"name": "참기름", "unit": "ml", "amount": 3}
-    ],
-    "nutrition": {"calories": 200, "protein": 10.0, "iron": 2.0, "calcium": 18, "vitaminA": 120, "vitaminC": 6, "zinc": 2.2}
-  },
-  {
-    "name": "달걀볶음밥",
-    "minMonth": 12,
-    "maxMonth": 24,
-    "cookTime": 15,
-    "instructions": "1. 달걀 1개를 풀어 스크램블 한다\n2. 당근 10g, 양파 10g을 잘게 다진다\n3. 채소를 볶다가 밥 100g을 넣고 볶는다\n4. 스크램블 달걀을 넣고 함께 섞는다",
-    "category": "TODDLER_FOOD",
-    "stage": "COMPLETE",
-    "ingredients": [
-      {"name": "달걀", "unit": "개", "amount": 1},
-      {"name": "당근", "unit": "g", "amount": 10},
-      {"name": "양파", "unit": "g", "amount": 10},
-      {"name": "쌀", "unit": "g", "amount": 100},
-      {"name": "참기름", "unit": "ml", "amount": 2}
-    ],
-    "nutrition": {"calories": 210, "protein": 8.5, "iron": 1.2, "calcium": 30, "vitaminA": 130, "vitaminC": 3, "zinc": 1.0}
-  },
-  {
-    "name": "두부된장국",
-    "minMonth": 12,
-    "maxMonth": 24,
-    "cookTime": 20,
-    "instructions": "1. 두부 40g을 작은 큐브로 자른다\n2. 애호박 15g, 양파 10g을 잘게 자른다\n3. 다시물 200ml에 된장 5g을 풀고 끓인다\n4. 채소를 넣고 5분 후 두부를 넣어 마무리한다",
-    "category": "TODDLER_FOOD",
-    "stage": "COMPLETE",
-    "ingredients": [
-      {"name": "두부", "unit": "g", "amount": 40},
-      {"name": "애호박", "unit": "g", "amount": 15},
-      {"name": "양파", "unit": "g", "amount": 10},
-      {"name": "된장", "unit": "g", "amount": 5},
-      {"name": "물", "unit": "ml", "amount": 200}
-    ],
-    "nutrition": {"calories": 65, "protein": 5.0, "iron": 1.0, "calcium": 55, "vitaminA": 20, "vitaminC": 4, "zinc": 0.6}
-  },
-  {
-    "name": "닭고기카레라이스",
-    "minMonth": 12,
-    "maxMonth": 24,
-    "cookTime": 35,
-    "instructions": "1. 닭가슴살 30g을 작게 자른다\n2. 감자 30g, 당근 20g, 양파 15g을 작게 자른다\n3. 닭고기와 채소를 볶다가 물 150ml을 넣고 끓인다\n4. 부드러워지면 아기용 카레가루를 넣고 밥과 함께 낸다",
-    "category": "TODDLER_FOOD",
-    "stage": "COMPLETE",
-    "ingredients": [
-      {"name": "닭가슴살", "unit": "g", "amount": 30},
-      {"name": "감자", "unit": "g", "amount": 30},
-      {"name": "당근", "unit": "g", "amount": 20},
-      {"name": "양파", "unit": "g", "amount": 15},
-      {"name": "카레가루", "unit": "g", "amount": 5},
-      {"name": "물", "unit": "ml", "amount": 150}
-    ],
-    "nutrition": {"calories": 180, "protein": 9.5, "iron": 0.8, "calcium": 20, "vitaminA": 160, "vitaminC": 10, "zinc": 0.9}
-  },
-  {
-    "name": "소고기미역국",
-    "minMonth": 12,
-    "maxMonth": 24,
-    "cookTime": 30,
-    "instructions": "1. 불린 미역 15g을 잘게 자른다\n2. 소고기 25g을 잘게 다진다\n3. 참기름에 소고기와 미역을 볶는다\n4. 물 250ml을 넣고 20분간 끓인다",
-    "category": "TODDLER_FOOD",
-    "stage": "COMPLETE",
-    "ingredients": [
-      {"name": "소고기", "unit": "g", "amount": 25},
-      {"name": "미역", "unit": "g", "amount": 15},
-      {"name": "참기름", "unit": "ml", "amount": 2},
-      {"name": "물", "unit": "ml", "amount": 250}
-    ],
-    "nutrition": {"calories": 85, "protein": 6.5, "iron": 2.5, "calcium": 45, "vitaminA": 35, "vitaminC": 2, "zinc": 1.6}
-  },
-  {
-    "name": "바나나오트밀",
-    "minMonth": 6,
-    "maxMonth": 9,
-    "cookTime": 10,
-    "instructions": "1. 오트밀 20g에 물 100ml을 넣고 끓인다\n2. 바나나 30g을 으깬다\n3. 끓인 오트밀에 으깬 바나나를 섞는다\n4. 적당한 농도로 조절한다",
-    "category": "BABY_FOOD",
-    "stage": "MIDDLE",
-    "ingredients": [
-      {"name": "오트밀", "unit": "g", "amount": 20},
-      {"name": "바나나", "unit": "g", "amount": 30},
-      {"name": "물", "unit": "ml", "amount": 100}
-    ],
-    "nutrition": {"calories": 75, "protein": 2.0, "iron": 0.8, "calcium": 10, "vitaminA": 3, "vitaminC": 5, "zinc": 0.4}
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
   },
   {
     "name": "사과당근퓨레",
@@ -393,9 +149,3134 @@
     "category": "BABY_FOOD",
     "stage": "EARLY",
     "ingredients": [
-      {"name": "사과", "unit": "g", "amount": 30},
-      {"name": "당근", "unit": "g", "amount": 20}
-    ],
-    "nutrition": {"calories": 28, "protein": 0.3, "iron": 0.2, "calcium": 8, "vitaminA": 190, "vitaminC": 5, "zinc": 0.1}
+      {
+        "name": "사과",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 20
+      }
+    ]
+  },
+  {
+    "name": "양배추미음",
+    "minMonth": 4,
+    "maxMonth": 6,
+    "cookTime": 20,
+    "instructions": "1. 양배추 40g을 줄기 제거하고 잘게 자른다\n2. 불린 쌀 15g과 물 200ml을 끓인다\n3. 양배추를 넣고 약불에서 15분 끓인다\n4. 체에 걸러 곱게 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "양배추",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "배미음",
+    "minMonth": 4,
+    "maxMonth": 6,
+    "cookTime": 20,
+    "instructions": "1. 배 50g을 껍질 벗기고 작게 자른다\n2. 물 150ml과 함께 약불에서 15분 끓인다\n3. 부드럽게 으깬 후 체에 걸러 곱게 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "배",
+        "unit": "g",
+        "amount": 50
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "name": "단호박미음",
+    "minMonth": 4,
+    "maxMonth": 6,
+    "cookTime": 25,
+    "instructions": "1. 단호박 50g을 껍질과 씨를 제거한다\n2. 찜통에서 15분간 찐다\n3. 물 150ml과 함께 믹서에 곱게 간다\n4. 체에 걸러 매끈하게 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "단호박",
+        "unit": "g",
+        "amount": 50
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "name": "바나나퓨레",
+    "minMonth": 5,
+    "maxMonth": 7,
+    "cookTime": 5,
+    "instructions": "1. 잘 익은 바나나 40g을 껍질 벗긴다\n2. 포크로 곱게 으깬다\n3. 모유나 분유 30ml을 섞어 농도를 조절한다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "바나나",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "name": "오트밀미음",
+    "minMonth": 5,
+    "maxMonth": 6,
+    "cookTime": 15,
+    "instructions": "1. 오트밀 15g을 물 200ml에 넣는다\n2. 약불에서 저어가며 10분간 끓인다\n3. 걸쭉해지면 체에 걸러 곱게 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "오트밀",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "비트미음",
+    "minMonth": 5,
+    "maxMonth": 6,
+    "cookTime": 25,
+    "instructions": "1. 비트 30g을 껍질 벗기고 작게 자른다\n2. 불린 쌀 15g과 물 200ml을 끓인다\n3. 비트를 넣고 약불에서 20분간 끓인다\n4. 체에 걸러 곱게 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "비트",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "시금치미음",
+    "minMonth": 5,
+    "maxMonth": 6,
+    "cookTime": 20,
+    "instructions": "1. 시금치 25g을 깨끗이 씻어 데친다\n2. 데친 시금치를 잘게 다진다\n3. 불린 쌀 15g과 물 200ml을 끓인다\n4. 시금치를 넣고 끓인 후 체에 걸러 곱게 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "시금치",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "감자양배추미음",
+    "minMonth": 5,
+    "maxMonth": 6,
+    "cookTime": 25,
+    "instructions": "1. 감자 30g, 양배추 20g을 작게 자른다\n2. 물 200ml에 넣고 부드럽게 삶는다\n3. 믹서에 곱게 간 후 체에 걸러 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "양배추",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "고구마배미음",
+    "minMonth": 5,
+    "maxMonth": 6,
+    "cookTime": 25,
+    "instructions": "1. 고구마 30g, 배 20g을 작게 자른다\n2. 물 200ml에 넣고 부드럽게 삶는다\n3. 삶은 재료를 으깬 후 체에 걸러 곱게 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "고구마",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "배",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "청경채미음",
+    "minMonth": 5,
+    "maxMonth": 6,
+    "cookTime": 20,
+    "instructions": "1. 청경채 30g을 깨끗이 씻어 데친다\n2. 불린 쌀 15g과 물 200ml을 끓인다\n3. 데친 청경채를 넣고 함께 끓인다\n4. 체에 걸러 곱게 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "청경채",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "브로콜리감자미음",
+    "minMonth": 5,
+    "maxMonth": 6,
+    "cookTime": 25,
+    "instructions": "1. 브로콜리 20g을 데치고, 감자 30g을 삶는다\n2. 물 200ml과 함께 믹서에 곱게 간다\n3. 체에 걸러 매끈하게 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "브로콜리",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "당근고구마미음",
+    "minMonth": 5,
+    "maxMonth": 6,
+    "cookTime": 25,
+    "instructions": "1. 당근 20g, 고구마 30g을 작게 자른다\n2. 물 200ml에 넣고 부드럽게 삶는다\n3. 삶은 재료를 으깬 후 체에 걸러 곱게 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "고구마",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "애호박감자미음",
+    "minMonth": 5,
+    "maxMonth": 6,
+    "cookTime": 20,
+    "instructions": "1. 애호박 30g, 감자 20g을 작게 자른다\n2. 물 200ml에 넣고 부드럽게 삶는다\n3. 믹서에 곱게 간 후 체에 걸러 만든다",
+    "category": "BABY_FOOD",
+    "stage": "EARLY",
+    "ingredients": [
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "소고기죽",
+    "minMonth": 6,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 소고기(안심) 20g을 핏물 빼고 잘게 다진다\n2. 불린 쌀 30g과 물 250ml을 끓인다\n3. 소고기를 넣고 약불에서 20분간 저어가며 끓인다\n4. 입자감이 느껴지게 살짝 으깬다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "닭고기채소죽",
+    "minMonth": 6,
+    "maxMonth": 9,
+    "cookTime": 35,
+    "instructions": "1. 닭가슴살 20g을 삶아서 잘게 찢는다\n2. 당근 10g, 양파 10g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 채소와 닭고기를 넣고 약불에서 20분간 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "시금치소고기죽",
+    "minMonth": 6,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 시금치 20g을 데쳐서 잘게 다진다\n2. 소고기 15g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기를 넣고 10분 후 시금치를 넣어 함께 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "시금치",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "단호박소고기죽",
+    "minMonth": 6,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 단호박 30g을 껍질 제거하고 찐다\n2. 소고기 15g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기와 으깬 단호박을 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "단호박",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "배추소고기죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 배추 잎 20g을 부드러운 부분만 잘게 다진다\n2. 소고기 15g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기, 배추를 넣고 약불에서 20분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "배추",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "두부채소죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 25,
+    "instructions": "1. 두부 30g을 으깬다\n2. 애호박 15g, 당근 10g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 채소와 두부를 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "두부",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "바나나오트밀",
+    "minMonth": 6,
+    "maxMonth": 9,
+    "cookTime": 10,
+    "instructions": "1. 오트밀 20g에 물 100ml을 넣고 끓인다\n2. 바나나 30g을 으깬다\n3. 끓인 오트밀에 으깬 바나나를 섞는다\n4. 적당한 농도로 조절한다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "오트밀",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "바나나",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "소고기당근죽",
+    "minMonth": 6,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 소고기 15g을 잘게 다진다\n2. 당근 15g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기와 당근을 넣고 약불에서 20분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "대구살죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 25,
+    "instructions": "1. 대구살 20g을 삶아서 가시를 제거하고 잘게 부순다\n2. 불린 쌀 30g과 물 250ml을 끓인다\n3. 대구살을 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "대구",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "소고기브로콜리죽",
+    "minMonth": 6,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 소고기 15g을 잘게 다진다\n2. 브로콜리 20g을 데쳐서 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기, 브로콜리를 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "브로콜리",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "닭고기감자죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 닭가슴살 20g을 삶아서 잘게 찢는다\n2. 감자 20g을 작게 자른다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 닭고기와 감자를 넣고 약불에서 20분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "소고기완두콩죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 소고기 15g을 잘게 다진다\n2. 완두콩 15g을 삶아 껍질을 벗긴다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기와 완두콩을 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "완두콩",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "애호박소고기죽",
+    "minMonth": 6,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 소고기 15g을 잘게 다진다\n2. 애호박 20g을 껍질 벗기고 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기와 애호박을 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "고구마닭고기죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 닭가슴살 15g을 삶아서 잘게 찢는다\n2. 고구마 25g을 삶아 으깬다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 닭고기와 고구마를 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "고구마",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "양배추소고기죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 소고기 15g을 잘게 다진다\n2. 양배추 20g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기와 양배추를 넣고 약불에서 20분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "양배추",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "현미소고기죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 35,
+    "instructions": "1. 현미 25g을 2시간 이상 불린다\n2. 소고기 15g을 잘게 다진다\n3. 불린 현미와 물 300ml을 끓인다\n4. 소고기를 넣고 약불에서 25분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "현미",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "name": "토마토닭고기죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 토마토 30g을 껍질 벗기고 씨를 제거한다\n2. 닭가슴살 15g을 삶아서 잘게 찢는다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 닭고기와 토마토를 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "토마토",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "청경채소고기죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 소고기 15g을 잘게 다진다\n2. 청경채 20g을 데쳐서 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기, 청경채를 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "청경채",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "콩나물소고기죽",
+    "minMonth": 8,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 콩나물 15g을 머리 제거 후 잘게 다진다\n2. 소고기 15g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기와 콩나물을 넣고 약불에서 20분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "콩나물",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "아보카도죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 10,
+    "instructions": "1. 잘 익은 아보카도 30g을 으깬다\n2. 불린 쌀 30g과 물 200ml로 죽을 끓인다\n3. 끓인 죽에 으깬 아보카도를 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "아보카도",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "소고기무죽",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 35,
+    "instructions": "1. 소고기 25g을 잘게 다진다\n2. 무 20g을 작은 큐브로 자른다\n3. 참기름에 소고기를 볶다가 무를 넣고 함께 볶는다\n4. 불린 쌀 40g과 물 300ml을 넣고 약불에서 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "무",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "name": "달걀야채죽",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 25,
+    "instructions": "1. 달걀 노른자 1개를 풀어준다\n2. 애호박 15g, 당근 10g을 잘게 다진다\n3. 불린 쌀 40g과 물 300ml로 죽을 끓인다\n4. 채소를 넣고 마지막에 달걀을 풀어 넣는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "달걀",
+        "unit": "개",
+        "amount": 1
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "name": "연어감자죽",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 연어 20g을 삶아서 잘게 부순다\n2. 감자 30g을 삶아서 으깬다\n3. 불린 쌀 35g과 물 280ml로 죽을 끓인다\n4. 감자와 연어를 넣고 약불에서 10분 더 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "연어",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 35
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 280
+      }
+    ]
+  },
+  {
+    "name": "소고기버섯죽",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 소고기 25g을 잘게 다진다\n2. 표고버섯 15g을 잘게 다진다\n3. 참기름에 소고기를 볶다가 버섯을 넣고 볶는다\n4. 불린 쌀 40g과 물 300ml을 넣고 약불에서 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "표고버섯",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "name": "닭고기채소무른밥",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 35,
+    "instructions": "1. 닭가슴살 25g을 삶아서 잘게 찢는다\n2. 당근 10g, 브로콜리 15g을 잘게 다진다\n3. 밥 80g에 물 100ml을 넣고 무르게 끓인다\n4. 닭고기와 채소를 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "브로콜리",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "우유감자수프",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 25,
+    "instructions": "1. 감자 50g을 껍질 벗기고 작게 자른다\n2. 양파 10g을 잘게 다진다\n3. 물 100ml에 감자와 양파를 넣고 삶는다\n4. 으깬 후 우유 80ml을 넣고 약불에서 데운다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 50
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "우유",
+        "unit": "ml",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "소고기양배추무른밥",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 소고기 25g을 잘게 다져 참기름에 볶는다\n2. 양배추 20g을 잘게 다져 함께 볶는다\n3. 밥 80g과 물 100ml을 넣고 무르게 끓인다\n4. 잘 섞어 완성한다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "양배추",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "대구살채소죽",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 대구살 25g을 삶아 가시를 제거하고 으깬다\n2. 당근 10g, 애호박 15g을 잘게 다진다\n3. 불린 쌀 40g과 물 300ml을 끓인다\n4. 대구살과 채소를 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "대구",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "name": "가자미야채죽",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 가자미 20g을 삶아 가시를 제거하고 잘게 부순다\n2. 브로콜리 15g을 데쳐서 잘게 다진다\n3. 불린 쌀 40g과 물 300ml을 끓인다\n4. 가자미와 브로콜리를 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "가자미",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "브로콜리",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "name": "소고기시금치무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 소고기 25g을 잘게 다져 볶는다\n2. 시금치 20g을 데쳐서 잘게 다진다\n3. 밥 80g과 물 80ml을 넣고 무르게 끓인다\n4. 소고기와 시금치를 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "시금치",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "단호박닭고기무른밥",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 35,
+    "instructions": "1. 닭가슴살 20g을 삶아서 잘게 찢는다\n2. 단호박 30g을 찐 후 으깬다\n3. 밥 80g과 물 100ml을 무르게 끓인다\n4. 닭고기와 단호박을 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "단호박",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "name": "달걀두부죽",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 25,
+    "instructions": "1. 달걀 1개의 노른자를 풀어준다\n2. 두부 20g을 으깬다\n3. 불린 쌀 40g과 물 250ml로 죽을 끓인다\n4. 두부를 넣고 5분 후 달걀을 풀어 넣는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "달걀",
+        "unit": "개",
+        "amount": 1
+      },
+      {
+        "name": "두부",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "소고기파프리카죽",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 소고기 20g을 잘게 다진다\n2. 파프리카 15g을 껍질 벗기고 잘게 다진다\n3. 불린 쌀 40g과 물 300ml을 끓인다\n4. 소고기와 파프리카를 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "파프리카",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "name": "닭고기토마토무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 닭가슴살 25g을 삶아서 잘게 찢는다\n2. 토마토 30g을 껍질 벗기고 잘게 다진다\n3. 밥 80g과 물 80ml을 넣고 무르게 끓인다\n4. 닭고기와 토마토를 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "토마토",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "소고기콩나물무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 소고기 25g을 잘게 다져 참기름에 볶는다\n2. 콩나물 15g을 다진다\n3. 밥 80g과 물 80ml을 넣고 무르게 끓인다\n4. 소고기, 콩나물을 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "콩나물",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "연어브로콜리죽",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 연어 20g을 삶아서 잘게 부순다\n2. 브로콜리 15g을 데쳐서 잘게 다진다\n3. 불린 쌀 40g과 물 300ml을 끓인다\n4. 연어와 브로콜리를 넣고 약불에서 10분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "연어",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "브로콜리",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "name": "돼지고기당근무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 돼지고기 안심 25g을 잘게 다진다\n2. 당근 15g을 잘게 다진다\n3. 참기름에 돼지고기와 당근을 볶는다\n4. 밥 80g과 물 80ml을 넣고 무르게 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "돼지고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "소고기미역죽",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 소고기 20g을 잘게 다진다\n2. 불린 미역 10g을 잘게 다진다\n3. 참기름에 소고기와 미역을 볶는다\n4. 불린 쌀 40g과 물 300ml을 넣고 약불에서 20분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "미역",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "name": "소고기비트무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 소고기 25g을 잘게 다진다\n2. 비트 15g을 삶아서 잘게 다진다\n3. 밥 80g과 물 80ml을 넣고 무르게 끓인다\n4. 소고기와 비트를 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "비트",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "닭고기완두콩무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 닭가슴살 25g을 삶아서 잘게 찢는다\n2. 완두콩 15g을 삶아 으깬다\n3. 밥 80g과 물 80ml을 넣고 무르게 끓인다\n4. 닭고기와 완두콩을 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "완두콩",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "블루베리오트밀",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 15,
+    "instructions": "1. 오트밀 25g에 물 120ml을 넣고 끓인다\n2. 블루베리 20g을 으깬다\n3. 끓인 오트밀에 블루베리를 섞는다\n4. 적당한 농도로 조절한다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "오트밀",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "블루베리",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 120
+      }
+    ]
+  },
+  {
+    "name": "새우감자무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 새우 15g을 삶아서 잘게 다진다\n2. 감자 25g을 삶아서 으깬다\n3. 밥 80g과 물 80ml을 넣고 무르게 끓인다\n4. 새우와 감자를 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "새우",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "소고기단호박무른밥",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 소고기 25g을 잘게 다진다\n2. 단호박 25g을 찐 후 으깬다\n3. 밥 80g과 물 80ml을 무르게 끓인다\n4. 소고기와 단호박을 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "단호박",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "달걀시금치무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 25,
+    "instructions": "1. 달걀 1개를 스크램블 한다\n2. 시금치 15g을 데쳐서 잘게 다진다\n3. 밥 80g과 물 80ml을 무르게 끓인다\n4. 달걀과 시금치를 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "달걀",
+        "unit": "개",
+        "amount": 1
+      },
+      {
+        "name": "시금치",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "치즈감자무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 20,
+    "instructions": "1. 감자 30g을 삶아서 으깬다\n2. 밥 80g과 물 80ml을 무르게 끓인다\n3. 으깬 감자를 넣고 섞는다\n4. 치즈 10g을 잘게 찢어 올리고 녹인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "치즈",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "소고기야채밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 30,
+    "instructions": "1. 소고기 30g을 잘게 다져 볶는다\n2. 당근 15g, 애호박 15g, 양파 10g을 잘게 다져 볶는다\n3. 밥 100g을 넣고 함께 볶는다\n4. 참기름을 약간 넣고 잘 섞는다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "name": "달걀볶음밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 15,
+    "instructions": "1. 달걀 1개를 풀어 스크램블 한다\n2. 당근 10g, 양파 10g을 잘게 다진다\n3. 채소를 볶다가 밥 100g을 넣고 볶는다\n4. 스크램블 달걀을 넣고 함께 섞는다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "달걀",
+        "unit": "개",
+        "amount": 1
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "두부된장국",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 20,
+    "instructions": "1. 두부 40g을 작은 큐브로 자른다\n2. 애호박 15g, 양파 10g을 잘게 자른다\n3. 다시물 200ml에 된장 5g을 풀고 끓인다\n4. 채소를 넣고 5분 후 두부를 넣어 마무리한다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "두부",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "된장",
+        "unit": "g",
+        "amount": 5
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "닭고기카레라이스",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 35,
+    "instructions": "1. 닭가슴살 30g을 작게 자른다\n2. 감자 30g, 당근 20g, 양파 15g을 작게 자른다\n3. 닭고기와 채소를 볶다가 물 150ml을 넣고 끓인다\n4. 부드러워지면 아기용 카레가루를 넣고 밥과 함께 낸다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "카레가루",
+        "unit": "g",
+        "amount": 5
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "name": "소고기미역국",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 30,
+    "instructions": "1. 불린 미역 15g을 잘게 자른다\n2. 소고기 25g을 잘게 다진다\n3. 참기름에 소고기와 미역을 볶는다\n4. 물 250ml을 넣고 20분간 끓인다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "미역",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "소고기콩나물밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 25,
+    "instructions": "1. 소고기 30g을 잘게 다져 간장 2ml로 밑간한다\n2. 콩나물 30g을 깨끗이 씻는다\n3. 쌀 100g 위에 콩나물과 소고기를 올려 밥을 짓는다\n4. 참기름과 간장을 섞은 양념으로 비빈다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "콩나물",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "간장",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "연어채소주먹밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 20,
+    "instructions": "1. 연어 25g을 삶아서 잘게 부순다\n2. 당근 10g, 애호박 10g을 잘게 다져 볶는다\n3. 밥 100g에 연어, 채소, 참기름 2ml을 섞는다\n4. 한 입 크기로 동그랗게 빚는다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "연어",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "닭고기채소볶음밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 20,
+    "instructions": "1. 닭가슴살 30g을 잘게 다져 볶는다\n2. 파프리카 15g, 양파 10g을 잘게 다져 볶는다\n3. 밥 100g을 넣고 함께 볶는다\n4. 참기름으로 마무리한다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "파프리카",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "소고기두부조림",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 20,
+    "instructions": "1. 두부 50g을 먹기 좋은 크기로 자른다\n2. 소고기 25g을 잘게 다진다\n3. 소고기를 볶다가 두부를 넣는다\n4. 간장 3ml과 물 50ml을 넣고 약불에서 졸인다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "두부",
+        "unit": "g",
+        "amount": 50
+      },
+      {
+        "name": "간장",
+        "unit": "ml",
+        "amount": 3
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 50
+      }
+    ]
+  },
+  {
+    "name": "소고기감자수프",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 30,
+    "instructions": "1. 소고기 25g을 잘게 다진다\n2. 감자 40g, 양파 10g을 작게 자른다\n3. 버터 5g에 양파를 볶고 소고기를 넣어 볶는다\n4. 물 200ml을 넣고 감자가 부드러울 때까지 끓인 후 우유 50ml을 넣는다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "버터",
+        "unit": "g",
+        "amount": 5
+      },
+      {
+        "name": "우유",
+        "unit": "ml",
+        "amount": 50
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "돼지고기채소볶음",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 20,
+    "instructions": "1. 돼지고기 안심 30g을 잘게 다진다\n2. 양배추 20g, 당근 10g, 양파 10g을 잘게 다진다\n3. 올리브유에 돼지고기를 볶는다\n4. 채소를 넣고 함께 볶아 밥과 함께 낸다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "돼지고기",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "양배추",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "올리브유",
+        "unit": "ml",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "name": "토마토달걀밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 15,
+    "instructions": "1. 토마토 40g을 껍질 벗기고 잘게 다진다\n2. 달걀 1개를 풀어 스크램블 한다\n3. 올리브유에 토마토를 볶아 소스를 만든다\n4. 밥 100g 위에 스크램블과 토마토소스를 올린다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "토마토",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "달걀",
+        "unit": "개",
+        "amount": 1
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "올리브유",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "소면채소탕",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 20,
+    "instructions": "1. 소면 30g을 삶아 짧게 잘라둔다\n2. 당근 10g, 애호박 10g을 잘게 다진다\n3. 다시마 육수 200ml에 채소를 넣고 끓인다\n4. 삶은 소면을 넣고 간장 2ml로 간한다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소면",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "간장",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "치즈달걀밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 15,
+    "instructions": "1. 달걀 1개를 풀어 스크램블 한다\n2. 밥 100g 위에 스크램블을 올린다\n3. 치즈 10g을 잘게 찢어 올린다\n4. 참기름 2ml을 뿌려 마무리한다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "달걀",
+        "unit": "개",
+        "amount": 1
+      },
+      {
+        "name": "치즈",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "소고기버섯볶음밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 20,
+    "instructions": "1. 소고기 30g을 잘게 다져 볶는다\n2. 표고버섯 15g, 양파 10g을 잘게 다져 볶는다\n3. 밥 100g을 넣고 함께 볶는다\n4. 참기름과 간장 2ml로 마무리한다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "표고버섯",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "간장",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "닭고기단호박스튜",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 30,
+    "instructions": "1. 닭가슴살 30g을 잘게 자른다\n2. 단호박 40g, 감자 20g을 작게 자른다\n3. 올리브유에 닭고기를 볶다가 채소를 넣는다\n4. 물 150ml을 넣고 우유 50ml을 추가하여 부드럽게 끓인다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "단호박",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "올리브유",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "우유",
+        "unit": "ml",
+        "amount": 50
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "name": "소고기무국",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 30,
+    "instructions": "1. 소고기 25g을 잘게 다진다\n2. 무 30g을 작은 큐브로 자른다\n3. 참기름에 소고기를 볶다가 무를 넣고 볶는다\n4. 물 250ml을 넣고 20분간 끓이고 간장 2ml로 간한다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "무",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "간장",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "새우야채볶음밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 20,
+    "instructions": "1. 새우 20g을 삶아서 잘게 다진다\n2. 당근 10g, 양파 10g, 애호박 10g을 잘게 다진다\n3. 올리브유에 채소를 볶다가 새우를 넣는다\n4. 밥 100g을 넣고 함께 볶는다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "새우",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "올리브유",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "밤고구마밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 30,
+    "instructions": "1. 밤 20g과 고구마 30g을 작게 자른다\n2. 쌀 80g과 함께 물을 넣고 밥을 짓는다\n3. 뜸을 들인 후 참기름 2ml을 넣고 잘 섞는다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "밤",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "고구마",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 120
+      }
+    ]
+  },
+  {
+    "name": "김달걀주먹밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 15,
+    "instructions": "1. 달걀 1개를 풀어 스크램블 한다\n2. 김 1g을 잘게 부순다\n3. 밥 100g에 스크램블과 김을 섞는다\n4. 참기름 2ml을 넣고 한 입 크기로 빚는다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "달걀",
+        "unit": "개",
+        "amount": 1
+      },
+      {
+        "name": "김",
+        "unit": "g",
+        "amount": 1
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "돼지고기된장찌개",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 25,
+    "instructions": "1. 돼지고기 안심 25g을 잘게 다진다\n2. 두부 30g, 애호박 15g, 양파 10g을 작게 자른다\n3. 물 200ml에 된장 5g을 풀어 끓인다\n4. 돼지고기와 채소를 넣고 15분간 끓인다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "돼지고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "두부",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "된장",
+        "unit": "g",
+        "amount": 5
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "name": "바나나요거트볼",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 5,
+    "instructions": "1. 바나나 40g을 동그랗게 슬라이스한다\n2. 요거트 50g을 그릇에 담는다\n3. 바나나를 올린다\n4. 오트밀 10g을 뿌려 완성한다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "바나나",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "요거트",
+        "unit": "g",
+        "amount": 50
+      },
+      {
+        "name": "오트밀",
+        "unit": "g",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "name": "소고기가지볶음밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 20,
+    "instructions": "1. 소고기 25g을 잘게 다진다\n2. 가지 20g을 작게 자른다\n3. 올리브유에 소고기와 가지를 볶는다\n4. 밥 100g을 넣고 간장 2ml로 간하여 볶는다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "가지",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "올리브유",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "간장",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "닭고기시금치밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 25,
+    "instructions": "1. 닭가슴살 30g을 삶아서 잘게 찢는다\n2. 시금치 20g을 데쳐서 잘게 다진다\n3. 밥 100g과 참기름 2ml을 섞는다\n4. 닭고기와 시금치를 올려 비빈다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "시금치",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "소고기옥수수밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 25,
+    "instructions": "1. 소고기 25g을 잘게 다져 볶는다\n2. 옥수수 알맹이 20g을 으깨듯 자른다\n3. 밥 100g에 소고기와 옥수수를 섞는다\n4. 참기름 2ml과 깨 1g을 뿌린다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "옥수수",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 100
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "깨",
+        "unit": "g",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "두부야채전",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 20,
+    "instructions": "1. 두부 50g을 으깬다\n2. 당근 10g, 양파 10g을 잘게 다진다\n3. 두부, 채소, 밀가루 15g을 섞어 반죽한다\n4. 올리브유에 한 입 크기로 구워낸다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "두부",
+        "unit": "g",
+        "amount": 50
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "양파",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "밀가루",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "올리브유",
+        "unit": "ml",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "name": "키위요거트",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 5,
+    "instructions": "1. 키위 30g을 껍질 벗기고 작게 자른다\n2. 요거트 50g을 그릇에 담는다\n3. 키위를 올린다\n4. 깨 1g을 뿌려 완성한다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "키위",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "요거트",
+        "unit": "g",
+        "amount": 50
+      },
+      {
+        "name": "깨",
+        "unit": "g",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "소고기배추국",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 25,
+    "instructions": "1. 소고기 25g을 잘게 다진다\n2. 배추 25g을 먹기 좋게 잘게 자른다\n3. 참기름에 소고기를 볶다가 배추를 넣는다\n4. 물 250ml을 넣고 15분간 끓이고 간장 2ml로 간한다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "배추",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "간장",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "검은콩밥",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 30,
+    "instructions": "1. 검은콩 15g을 4시간 이상 불린다\n2. 쌀 80g과 불린 검은콩을 함께 넣는다\n3. 물을 넣고 밥을 짓는다\n4. 뜸을 들여 완성한다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "검은콩",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 130
+      }
+    ]
+  },
+  {
+    "name": "돼지고기감자조림",
+    "minMonth": 12,
+    "maxMonth": 24,
+    "cookTime": 25,
+    "instructions": "1. 돼지고기 안심 25g을 작게 자른다\n2. 감자 40g을 작은 큐브로 자른다\n3. 돼지고기를 볶다가 감자를 넣는다\n4. 간장 3ml, 물 80ml을 넣고 감자가 부드러울 때까지 졸인다",
+    "category": "TODDLER_FOOD",
+    "stage": "COMPLETE",
+    "ingredients": [
+      {
+        "name": "돼지고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "간장",
+        "unit": "ml",
+        "amount": 3
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "밤소고기죽",
+    "minMonth": 8,
+    "maxMonth": 9,
+    "cookTime": 35,
+    "instructions": "1. 밤 15g을 삶아 으깬다\n2. 소고기 15g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기와 밤을 넣고 약불에서 20분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "밤",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "감자당근닭고기죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 닭가슴살 15g을 삶아서 잘게 찢는다\n2. 감자 15g, 당근 10g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 닭고기와 채소를 넣고 약불에서 20분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "배당근죽",
+    "minMonth": 6,
+    "maxMonth": 9,
+    "cookTime": 25,
+    "instructions": "1. 배 20g을 작게 자른다\n2. 당근 15g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 배와 당근을 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "배",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "두부시금치죽",
+    "minMonth": 7,
+    "maxMonth": 9,
+    "cookTime": 25,
+    "instructions": "1. 두부 20g을 으깬다\n2. 시금치 15g을 데쳐서 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 두부와 시금치를 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "두부",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "시금치",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "소고기표고당근죽",
+    "minMonth": 8,
+    "maxMonth": 9,
+    "cookTime": 30,
+    "instructions": "1. 소고기 15g을 잘게 다진다\n2. 표고버섯 10g, 당근 10g을 잘게 다진다\n3. 불린 쌀 30g과 물 250ml을 끓인다\n4. 소고기, 버섯, 당근을 넣고 약불에서 20분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "MIDDLE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "표고버섯",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 10
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 30
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "name": "돼지고기양배추무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 돼지고기 안심 25g을 잘게 다진다\n2. 양배추 20g을 잘게 다진다\n3. 참기름에 돼지고기를 볶다가 양배추를 넣는다\n4. 밥 80g과 물 80ml을 넣고 무르게 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "돼지고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "양배추",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "소고기토마토죽",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 소고기 20g을 잘게 다진다\n2. 토마토 25g을 껍질 벗기고 잘게 다진다\n3. 불린 쌀 40g과 물 300ml을 끓인다\n4. 소고기와 토마토를 넣고 약불에서 15분 끓인다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "토마토",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 40
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "name": "닭고기당근무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 닭가슴살 25g을 삶아서 잘게 찢는다\n2. 당근 15g을 잘게 다진다\n3. 밥 80g과 물 80ml을 무르게 끓인다\n4. 닭고기와 당근을 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "닭가슴살",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "당근",
+        "unit": "g",
+        "amount": 15
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "소고기애호박무른밥",
+    "minMonth": 9,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 소고기 25g을 잘게 다져 참기름에 볶는다\n2. 애호박 20g을 잘게 다진다\n3. 밥 80g과 물 80ml을 무르게 끓인다\n4. 소고기와 애호박을 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "소고기",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "애호박",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "참기름",
+        "unit": "ml",
+        "amount": 2
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
+  },
+  {
+    "name": "가자미감자무른밥",
+    "minMonth": 10,
+    "maxMonth": 12,
+    "cookTime": 30,
+    "instructions": "1. 가자미 20g을 삶아 가시를 제거하고 잘게 부순다\n2. 감자 25g을 삶아서 으깬다\n3. 밥 80g과 물 80ml을 무르게 끓인다\n4. 가자미와 감자를 넣고 잘 섞는다",
+    "category": "BABY_FOOD",
+    "stage": "LATE",
+    "ingredients": [
+      {
+        "name": "가자미",
+        "unit": "g",
+        "amount": 20
+      },
+      {
+        "name": "감자",
+        "unit": "g",
+        "amount": 25
+      },
+      {
+        "name": "쌀",
+        "unit": "g",
+        "amount": 80
+      },
+      {
+        "name": "물",
+        "unit": "ml",
+        "amount": 80
+      }
+    ]
   }
 ]

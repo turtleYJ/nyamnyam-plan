@@ -79,6 +79,7 @@ export interface NutritionInfo {
   vitamin_a: number;
   vitamin_c: number;
   zinc: number;
+  source: string | null;
 }
 
 // Plan
