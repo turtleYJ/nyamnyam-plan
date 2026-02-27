@@ -107,3 +107,18 @@ export interface GeneratePlanRequest {
   child_id: number;
   week_start_date: string;
 }
+
+// Shopping List
+export interface ShoppingListResponse {
+  plan_id: number;
+  week_start_date: string;
+  items: ShoppingItem[];
+  total_items: number;
+}
+
+export interface ShoppingItem {
+  ingredient_name: string;
+  total_amount: number;
+  unit: string;
+  recipe_names: string[];
+}

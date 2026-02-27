@@ -7,6 +7,7 @@ import com.nyamnyam.common.exception.ErrorCode
 import com.nyamnyam.domain.child.repository.ChildRepository
 import com.nyamnyam.domain.plan.dto.GeneratePlanRequest
 import com.nyamnyam.domain.plan.dto.MealRequest
+import com.nyamnyam.domain.plan.dto.ShoppingListResponse
 import com.nyamnyam.domain.plan.dto.WeeklyPlanCreateRequest
 import com.nyamnyam.domain.plan.dto.WeeklyPlanResponse
 import com.nyamnyam.domain.plan.dto.WeeklyPlanUpdateRequest
@@ -140,6 +141,16 @@ class WeeklyPlanService(
         addMeals(plan, request.meals)
 
         return WeeklyPlanResponse.from(plan)
+    }
+
+    fun getShoppingList(userId: Long, planId: Long): ShoppingListResponse {
+        val plan = findPlanOrThrow(planId)
+        verifyPlanOwnership(userId, plan)
+        // lazy loading으로 각 recipe의 ingredients 초기화 (트랜잭션 내)
+        plan.meals.forEach { meal ->
+            meal.recipe.ingredients.forEach { it.ingredient.name }
+        }
+        return ShoppingListResponse.from(plan)
     }
 
     @Transactional

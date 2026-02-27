@@ -83,10 +83,19 @@ export default function PlanDetailPage() {
               weekStartDate={plan.week_start_date}
             />
 
+            {/* Shopping List */}
+            <Button
+              variant="secondary"
+              className="w-full mt-6"
+              onClick={() => router.push(`/plans/${params.id}/shopping`)}
+            >
+              장보기 목록
+            </Button>
+
             {/* Delete */}
             <Button
               variant="ghost"
-              className="w-full mt-6 text-red-400 hover:text-red-500 hover:bg-red-50"
+              className="w-full mt-2 text-red-400 hover:text-red-500 hover:bg-red-50"
               onClick={handleDelete}
             >
               식단 삭제

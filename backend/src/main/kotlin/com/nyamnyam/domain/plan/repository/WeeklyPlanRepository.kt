@@ -27,4 +27,15 @@ interface WeeklyPlanRepository : JpaRepository<WeeklyPlan, Long> {
         WHERE p.id = :id
     """)
     fun findByIdWithDetails(id: Long): WeeklyPlan?
+
+    @Query("""
+        SELECT DISTINCT p FROM WeeklyPlan p
+        LEFT JOIN FETCH p.meals m
+        LEFT JOIN FETCH m.recipe r
+        LEFT JOIN FETCH r.ingredients ri
+        LEFT JOIN FETCH ri.ingredient
+        LEFT JOIN FETCH p.child
+        WHERE p.id = :id
+    """)
+    fun findByIdWithIngredients(id: Long): WeeklyPlan?
 }

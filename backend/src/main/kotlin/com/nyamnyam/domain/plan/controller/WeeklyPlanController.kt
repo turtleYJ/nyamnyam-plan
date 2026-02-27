@@ -2,6 +2,7 @@ package com.nyamnyam.domain.plan.controller
 
 import com.nyamnyam.common.security.CurrentUserId
 import com.nyamnyam.domain.plan.dto.GeneratePlanRequest
+import com.nyamnyam.domain.plan.dto.ShoppingListResponse
 import com.nyamnyam.domain.plan.dto.WeeklyPlanCreateRequest
 import com.nyamnyam.domain.plan.dto.WeeklyPlanResponse
 import com.nyamnyam.domain.plan.dto.WeeklyPlanUpdateRequest
@@ -47,6 +48,14 @@ class WeeklyPlanController(
         @Valid @RequestBody request: GeneratePlanRequest
     ): ResponseEntity<WeeklyPlanResponse> {
         return ResponseEntity.status(HttpStatus.CREATED).body(weeklyPlanService.generateAiPlan(userId, request))
+    }
+
+    @GetMapping("/{id}/shopping-list")
+    fun getShoppingList(
+        @CurrentUserId userId: Long,
+        @PathVariable id: Long
+    ): ResponseEntity<ShoppingListResponse> {
+        return ResponseEntity.ok(weeklyPlanService.getShoppingList(userId, id))
     }
 
     @PutMapping("/{id}")
