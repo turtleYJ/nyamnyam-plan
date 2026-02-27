@@ -1,7 +1,7 @@
 # nyamnyam-plan 세션 기록
 
-## 현재 상태 (2026-02-25)
-- **완료**: 1~6단계 (MVP 전체)
+## 현재 상태 (2026-02-27)
+- **완료**: 1~6단계 (MVP 전체) + 장보기 목록 기능
 
 ## 완료된 단계
 
@@ -44,6 +44,15 @@
 - AI 생성 UI: 30초 대응 진행 메시지 + 로딩 상태
 - 32개 파일 변경, 1,901줄 추가
 
+### 장보기 목록 기능 (a78111a)
+- `GET /api/plans/{id}/shopping-list` — 주간 식단 재료 합산 API
+- 레시피 등장 횟수 × 재료량 합산, "물" 제외
+- 카테고리 분류 (곡류/육류/채소/과일/콩·유제품) + 아이콘
+- 체크 상태 localStorage 저장 (planId별, 새로고침 유지)
+- 쿠팡 검색 링크 (개별 재료 + 전체 한번에 검색)
+- 9개 파일 변경, 455줄 추가
+- Hibernate MultipleBagFetchException → lazy loading으로 해결
+
 ## 프로젝트 구조 요약
 ```
 backend/src/main/kotlin/com/nyamnyam/
@@ -53,7 +62,7 @@ backend/src/main/kotlin/com/nyamnyam/
 ├── domain/
 │   ├── child/     # Child CRUD (controller, service, repository, dto, entity)
 │   ├── recipe/    # Recipe 조회/필터링 (controller, service, repository, dto, entity)
-│   ├── plan/      # WeeklyPlan/DailyMeal CRUD (controller, service, repository, dto, entity)
+│   ├── plan/      # WeeklyPlan/DailyMeal CRUD + ShoppingList (controller, service, repository, dto, entity)
 │   └── user/      # User (service, repository, dto, entity)
 └── infrastructure/ # HealthController, DataSeeder, AiMealPlanClient, AiMealPlanDto
 
@@ -64,7 +73,7 @@ frontend/src/
 │   ├── ui/        # Button, Input, Modal, Spinner, EmptyState
 │   ├── layout/    # AppShell (인증 가드), BottomNav (3탭)
 │   ├── child/     # ChildCard, ChildForm
-│   ├── plan/      # GenerateButton, PlanCard, WeeklyGrid
+│   ├── plan/      # GenerateButton, PlanCard, WeeklyGrid, ShoppingList
 │   └── recipe/    # RecipeCard, RecipeFilter
 └── app/
     ├── page.tsx                          # 랜딩 (dev-login + OAuth)
@@ -72,6 +81,7 @@ frontend/src/
     ├── children/page.tsx                 # 아이 관리
     ├── plans/page.tsx                    # 식단 목록 + AI 생성
     ├── plans/[id]/page.tsx               # 주간 식단 상세
+    ├── plans/[id]/shopping/page.tsx     # 장보기 목록
     ├── recipes/page.tsx                  # 레시피 목록 (필터링)
     └── recipes/[id]/page.tsx             # 레시피 상세
 ```
@@ -94,6 +104,7 @@ frontend/src/
 | PUT | /api/plans/{id} | O | ✅ |
 | DELETE | /api/plans/{id} | O | ✅ |
 | POST | /api/plans/generate | O | ✅ |
+| GET | /api/plans/{id}/shopping-list | O | ✅ |
 | GET | /api/health | X | ✅ |
 
 ## E2E 테스트 기록 (2026-02-25)
@@ -123,6 +134,24 @@ frontend/src/
 | AI 서버 503 | 백엔드 WebClient가 camelCase로 전송 | WebClientConfig에 ObjectMapper 주입 |
 | MariaDB 연결 실패 | MySQL 드라이버가 `transaction_isolation` 전송 | MariaDB JDBC 드라이버로 변경 |
 | Python 3.9 타입 에러 | `dict \| None` 문법 3.10+ 전용 | `from __future__ import annotations` 추가 |
+
+## E2E 테스트 기록 — 장보기 목록 (2026-02-27)
+
+| # | 테스트 | 결과 |
+|---|--------|------|
+| 1 | 식단 상세 → "장보기 목록" 버튼 표시 | ✅ |
+| 2 | 버튼 클릭 → `/plans/1/shopping` 이동 | ✅ |
+| 3 | API → 12개 재료 목록 (합산 정확) | ✅ |
+| 4 | 카테고리 분류: 곡류(2), 육류(2), 채소(6), 과일(1), 콩/유제품(1) | ✅ |
+| 5 | 체크 → 진행률 갱신 (2/12, 17%) | ✅ |
+| 6 | 새로고침 후 체크 상태 유지 (localStorage) | ✅ |
+| 7 | 쿠팡 링크 → 실제 검색 결과 페이지 로드 확인 | ✅ |
+
+### 발견 및 수정한 버그
+| 버그 | 원인 | 수정 |
+|------|------|------|
+| API 500 | Hibernate MultipleBagFetchException (2 컬렉션 동시 fetch join) | findByIdWithDetails + 트랜잭션 내 lazy loading |
+| Set 스프레드 타입 에러 | TypeScript downlevelIteration 미설정 | `Array.from(checked)` 사용 |
 
 ## 주요 패턴
 - **DTO**: companion `from()` 팩토리
